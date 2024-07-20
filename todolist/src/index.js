@@ -4,20 +4,16 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import HelloWorld from './Derectory/HelloWorld';
-import TextField from './Derectory/TextField';
-
+import Form from './CounterState/Form';
+import Events from './CounterState/Events';
+import Counter from './CounterState/Counter';
+import Formulaire from './CounterState/Formulaire';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-  <HelloWorld lastName="El boussanni"/>
- 
-  <TextField inputName='Assia' inputLabel='First Name'>
-    the first text field
-  </TextField>
-  <TextField inputName='Assia' inputLabel='Last Name'>
-     Magna elit qui velit occaecat consequat occaecat dolor est. Eiusmod aliquip mollit laboris incididunt. Eu enim veniam ad excepteur consectetur non dolor proident elit adipisicing.
-    /</TextField>
-  </React.StrictMode>
+  
+  // <Form init={2} step={10}/>
+   
+<Formulaire/>
 );
 
 // If you want to start measuring performance in your app, pass a function
