@@ -4,7 +4,7 @@ function Formulaire() {
 
 
 const[name,setName]=useState('')
-const[age,setAge]=useState('')
+const[age,setAge]=useState('') 
 
 const handleNameInputChange=()=>{
         const name= document.querySelector('#name').value

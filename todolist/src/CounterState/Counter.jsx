@@ -7,18 +7,26 @@ export default class Counter extends Component{
         this.state = {counter:0,
             date:undefined
         }
-    }
- 
- /*  componentDidMount(){
-        setInterval(()=> this.setState(
+    } 
+ //we call it just one time 
+   componentDidMount(){
+    //we always use it to --->fetch api
+    console.log("component monted")
+       /* setInterval(()=> this.setState(
             prevState =>{
                 console.log(prevState)
                 return {counter : prevState.counter+1}
             }
            
-        ),1000)
+        ),1000)*/
        
-   }*/
+   }
+   componentDidUpdate(prevProps,prevState,snapshot){
+    console.log("component apdated")
+    console.log(prevState,this.state)
+    alert(prevState.counter + " now is " + this.state.counter);
+    
+   }
   handleClick =()=>{
     console.log(this)
        this.setState(
